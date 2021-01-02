@@ -31,6 +31,7 @@ static bool8 CheckPyramidBagHasItem(u16 itemId, u16 count);
 static bool8 CheckPyramidBagHasSpace(u16 itemId, u16 count);
 static void ShowItemIconSprite(u16 item, bool8 firstTime, bool8 flash);
 static void DestroyItemIconSprite(void);
+void ItemId_GetHoldEffectParam_Script();
 
 // EWRAM variables
 EWRAM_DATA struct BagPocket gBagPockets[POCKETS_COUNT] = {0};
@@ -71,6 +72,11 @@ void ApplyNewEncryptionKeyToBagItems(u32 newKey)
         for (item = 0; item < gBagPockets[pocket].capacity; item++)
             ApplyNewEncryptionKeyToHword(&(gBagPockets[pocket].itemSlots[item].quantity), newKey);
     }
+}
+
+void ItemId_GetHoldEffectParam_Script()
+{
+    VarSet(VAR_RESULT, ItemId_GetHoldEffectParam(VarGet(VAR_0x8004)));
 }
 
 void ApplyNewEncryptionKeyToBagItems_(u32 newKey) // really GF?
