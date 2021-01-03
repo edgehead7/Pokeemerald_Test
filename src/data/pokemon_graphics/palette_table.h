@@ -1272,6 +1272,9 @@ SPECIES_PAL(CRAMORANT_GULPING, gMonPalette_CramorantGulping),
     SPECIES_PAL(CALYREX_ICE_RIDER, gMonPalette_CalyrexIceRider),
     SPECIES_PAL(CALYREX_SHADOW_RIDER, gMonPalette_CalyrexShadowRider),
 
+    SPECIES_PAL(FRILLISH_FEMALE, gMonPalette_FrillishFemale),
+    SPECIES_PAL(JELLICENT_FEMALE, gMonPalette_JellicentFemale),
+	
     SPECIES_PAL(EGG, gMonPalette_Egg),
 };
 

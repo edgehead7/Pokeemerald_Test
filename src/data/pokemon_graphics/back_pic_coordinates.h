@@ -6100,6 +6100,18 @@ const struct MonCoords gMonBackPicCoords[] =
         .size = 0x87,
         .y_offset = 7,
     },
+    // Frillish
+    [SPECIES_FRILLISH_FEMALE] =
+    {
+        .size = 0x57,
+        .y_offset = 7,
+    },
+    // Jellicent
+    [SPECIES_JELLICENT_FEMALE] =
+    {
+        .size = 0x86,
+        .y_offset = 10,
+    },
     // Egg
     [SPECIES_EGG] =
     {

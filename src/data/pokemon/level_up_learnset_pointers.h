@@ -1272,4 +1272,8 @@ const struct LevelUpMove *const gLevelUpLearnsets[NUM_SPECIES] =
     // Calyrex
     [SPECIES_CALYREX_ICE_RIDER] = sCalyrexIceRiderLevelUpLearnset,
     [SPECIES_CALYREX_SHADOW_RIDER] = sCalyrexShadowRiderLevelUpLearnset,
+    // Frillish
+    [SPECIES_FRILLISH_FEMALE] = sFrillishLevelUpLearnset,
+    // Jellicent
+    [SPECIES_JELLICENT_FEMALE] = sJellicentLevelUpLearnset,
 };
